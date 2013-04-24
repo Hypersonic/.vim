@@ -5,7 +5,8 @@ Just my vimrc, doesn't have much (by intention, my old one was HUUUUUUGE, so I n
 
 Plugins
 -------
-- Pathogen (for loading plugins)
+- [Pathogen](https://github.com/tpope/vim-pathogen) (for loading plugins)
+- [NerdCommenter](https://github.com/scrooloose/nerdcommenter)
 
 Colorschemes
 ------------
