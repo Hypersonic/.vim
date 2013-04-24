@@ -5,7 +5,7 @@ Just my vimrc, doesn't have much (by intention, my old one was HUUUUUUGE, so I n
 
 Plugins
 -------
-- Pathogen (for loading plugins
+- Pathogen (for loading plugins)
 
 Colorschemes
 ------------
