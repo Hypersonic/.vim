@@ -8,10 +8,11 @@ Plugins
 - [Pathogen](https://github.com/tpope/vim-pathogen) (for loading plugins)
 - [NerdCommenter](https://github.com/scrooloose/nerdcommenter)
 - [Fugitive](https://github.com/tpope/vim-fugitive)
+- [MiniBufExpl](https://github.com/fholgado/minibufexpl.vim)
 
 Colorschemes
 ------------
-- evening.vim, with a few tweaks (set to default in vimrc)
+- evening.vim, with a few tweaks (default)
 - smyck.vim
 
 Curious things

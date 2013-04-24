@@ -189,3 +189,11 @@ inoremap *[ []<esc>i
 inoremap { {<esc>o}<esc>O
 " inoremap ' ''<esc>i
 inoremap "" ""<esc>i
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Minibufexpl
+noremap <leader>u :TMiniBufExplorer<cr>
