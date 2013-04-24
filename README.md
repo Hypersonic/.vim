@@ -1,7 +1,7 @@
 Josh's vimrc
 ------------
 
-Just my vimrc, doesn't have much (by intention, my old one was HUUUUUUGE, so I needed to fix that).
+Just my vimrc, I try to keep it relatively lightweight.
 
 Plugins
 -------
