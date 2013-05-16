@@ -200,3 +200,6 @@ inoremap "" ""<esc>i
 
 " Minibufexpl
 noremap <leader>u :TMiniBufExplorer<cr>
+
+" FuzzyFinder
+map <leader>b :FufBuffer<cr>
