@@ -28,7 +28,6 @@ Setup
 -----
 Of course, you need to set it up.
 Do these things:
-
 1. Clone the repo
 > git clone git@github.com:hypersonic/.vim.git ~/.vim
 

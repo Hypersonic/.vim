@@ -9,7 +9,6 @@
 " Pathogen!
 execute pathogen#infect()
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -185,8 +184,12 @@ map r :redo<return>
 " Map auto complete of (, ", ', [
 inoremap *( ()<esc>i
 inoremap *[ []<esc>i
-" inoremap { {}<esc>i
-inoremap { {<esc>o}<esc>O
+inoremap { {}<esc>i
+autocmd BufNewFile,BufRead *.java inoremap { {<esc>o}<esc>O
+autocmd BufNewFile,BufRead *.cpp inoremap { {<esc>o}<esc>O
+autocmd BufNewFile,BufRead *.c inoremap { {<esc>o}<esc>O
+autocmd BufNewFile,BufRead *.js inoremap { {<esc>o}<esc>O
+autocmd BufNewFile,BufRead *.css inoremap { {<esc>o}<esc>O
 " inoremap ' ''<esc>i
 inoremap "" ""<esc>i
 
