@@ -8,7 +8,6 @@ Plugins
 - [Pathogen](https://github.com/tpope/vim-pathogen) (for loading plugins)
 - [NerdCommenter](https://github.com/scrooloose/nerdcommenter)
 - [Fugitive](https://github.com/tpope/vim-fugitive)
-- [MiniBufExpl](https://github.com/fholgado/minibufexpl.vim)
 
 Colorschemes
 ------------
