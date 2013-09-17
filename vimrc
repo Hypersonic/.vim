@@ -37,6 +37,9 @@ set autoread
 " Set folding to go by the file's syntax highlighting
 set foldmethod=syntax
 
+" Turn on syntax highlighting
+syntax on
+
 " Don't fold automatically
 set foldlevel=999999
 
