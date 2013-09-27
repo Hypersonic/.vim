@@ -8,11 +8,16 @@ Plugins
 - [Pathogen](https://github.com/tpope/vim-pathogen) (for loading plugins)
 - [NerdCommenter](https://github.com/scrooloose/nerdcommenter)
 - [Fugitive](https://github.com/tpope/vim-fugitive)
+- [SuperTab](https://github.com/ervandew/supertab)
 
 Colorschemes
 ------------
 - evening.vim, with a few tweaks (default)
-- smyck.vim
+- [smyck.vim](http://color.smyck.org/)
+
+Additional Syntax Files
+-----------------------
+- [javascript](https://github.com/jelera/vim-javascript-syntax)
 
 Curious things
 --------------
@@ -27,6 +32,7 @@ Setup
 -----
 Of course, you need to set it up.
 Do these things:
+
 1. Clone the repo
 > git clone git@github.com:hypersonic/.vim.git ~/.vim
 
@@ -35,7 +41,6 @@ Do these things:
 
 3. Get the plugins as submodules
 > cd ~/.vim
-
 > git submodule init --update
 
 4. Enjoy
