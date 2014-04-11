@@ -202,4 +202,4 @@ inoremap "" ""<esc>i
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " FuzzyFinder
-map <leader>b :FufBuffer<cr>
+map <leader>b :FufFile<cr>
