@@ -177,6 +177,12 @@ noremap K <pageup>
 noremap H <home>
 noremap L <end>
 
+" Tab movement
+map <leader>tn :tabnext<return>
+map <leader>tp :tabprev<return>
+map <leader>tN :tabnew<return>
+map <leader>tc :tabclose<return>
+
 " Map r to redo
 map r :redo<return>
 

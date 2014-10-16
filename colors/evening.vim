@@ -13,7 +13,7 @@ endif
 
 let colors_name = "evening"
 
-hi Normal ctermbg=DarkGrey ctermfg=White guifg=White guibg=grey20
+hi Normal ctermbg=None ctermfg=White guifg=White guibg=grey20
 
 " Groups used in the 'highlight' and 'guicursor' options default value.
 hi ErrorMsg term=standout ctermbg=DarkRed ctermfg=White guibg=Red guifg=White
@@ -54,6 +54,7 @@ hi Special term=bold ctermfg=LightRed guifg=Orange guibg=grey5
 if &t_Co > 8
   hi Statement term=bold cterm=bold ctermfg=Yellow guifg=#ffff60 gui=bold
 endif
+hi Comment ctermfg=LightBlue
 hi Ignore ctermfg=DarkGrey guifg=grey20
 
 " vim: sw=2
