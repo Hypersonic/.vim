@@ -67,6 +67,17 @@ set showcmd
 " On the iPad, it's a pain to use one of the normal <esc> alternatives.
 imap ''' <esc>
 
+" Toggle paste mode easily
+nmap <leader>PP :set paste!<cr>
+
+" Turn off backup and swap files
+set nobackup
+set noswapfile 
+
+" Split windows more logically
+set splitbelow
+set splitright
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
