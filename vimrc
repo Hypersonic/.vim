@@ -223,3 +223,5 @@ inoremap "" ""<esc>i
 map <leader>b :FufBuffer<cr>
 map <leader>f :FufFile<cr>
 
+" D dispatch stuffs
+autocmd FileType d map <leader>B :Start dub<cr>
