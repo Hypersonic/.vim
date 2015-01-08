@@ -224,4 +224,5 @@ map <leader>b :FufBuffer<cr>
 map <leader>f :FufFile<cr>
 
 " D dispatch stuffs
-autocmd FileType d map <leader>B :Start dub<cr>
+autocmd FileType d map <leader>B :Start dub run<cr>
+autocmd FileType d map <leader>D :Dispatch dub build<cr>
