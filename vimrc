@@ -121,6 +121,9 @@ set tm=500
 " Show line numbers
 set nu
 
+" Show collumn color at 80
+set colorcolumn=80
+
 " Colorscheme
 colorscheme evening
 
@@ -223,6 +226,8 @@ inoremap "" ""<esc>i
 map <leader>b :FufBuffer<cr>
 map <leader>f :FufFile<cr>
 
+autocmd FileType * map <leader>d :w<cr>:Dispatch<cr>
+
 " D dispatch stuffs
-autocmd FileType d map <leader>B :Start dub run<cr>
-autocmd FileType d map <leader>D :Dispatch dub build<cr>
+autocmd FileType d map <leader>B :w<cr>:Start dub run<cr>
+autocmd FileType d map <leader>d :w<cr>:Dispatch dub build<cr>
