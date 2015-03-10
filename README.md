@@ -21,7 +21,6 @@ Additional Syntax Files
 
 Curious things
 --------------
-- I've gotten into the odd habit of coding on an ssh'd iPad, but the keyboard doesn't have an escape key. I mapped `'''` to `<esc>` to compensate.
 - I've mapped `shift+[h/j/k/l]` to `[home/pgdown/pgup/end]`, since I find it useful.
 
 Using
