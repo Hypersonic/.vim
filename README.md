@@ -40,6 +40,6 @@ Do these things:
 
 3. Get the plugins as submodules
 > cd ~/.vim
-> git submodule init --update
+> git submodule update --init
 
 4. Enjoy
