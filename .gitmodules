@@ -6,22 +6,22 @@
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/FuzzyFinder"]
 	path = bundle/FuzzyFinder
-	url = git@github.com:vim-scripts/FuzzyFinder.git
+	url = https://github.com/vim-scripts/FuzzyFinder.git
 [submodule "bundle/L9"]
 	path = bundle/L9
-	url = git@github.com:vim-scripts/L9.git
+	url = https://github.com/vim-scripts/L9.git
 [submodule "bundle/vim-javascript-syntax"]
 	path = bundle/vim-javascript-syntax
-	url = git@github.com:jelera/vim-javascript-syntax.git
+	url = https://github.com/jelera/vim-javascript-syntax.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git@github.com:ervandew/supertab.git
+	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
-	url = git@github.com:tpope/vim-pathogen.git
+	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/dispatch"]
 	path = bundle/dispatch
-	url = git://github.com/tpope/vim-dispatch.git
+	url = https://github.com/tpope/vim-dispatch.git
 [submodule "bundle/editorconfig"]
 	path = bundle/editorconfig
-	url = git@github.com:editorconfig/editorconfig-vim.git
+	url = https://github.com/editorconfig/editorconfig-vim.git
