@@ -64,9 +64,6 @@ set term=builtin_screen
 " Show partial commands while you type
 set showcmd
 
-" On the iPad, it's a pain to use one of the normal <esc> alternatives.
-imap ''' <esc>
-
 " Toggle paste mode easily
 nmap <leader>PP :set paste!<cr>
 
