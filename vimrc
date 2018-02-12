@@ -35,8 +35,8 @@ set notimeout
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" Set folding to go by the file's syntax highlighting
-set foldmethod=syntax
+" Set folding to go by indentation
+set foldmethod=indent
 
 " Turn on syntax highlighting
 syntax on
@@ -66,10 +66,6 @@ set showcmd
 
 " Toggle paste mode easily
 nmap <leader>PP :set paste!<cr>
-
-" Turn off backup and swap files
-set nobackup
-set noswapfile 
 
 " Split windows more logically
 set splitbelow
@@ -206,6 +202,7 @@ map r :redo<return>
 inoremap *( ()<esc>i
 inoremap *[ []<esc>i
 inoremap { {}<esc>i
+autocmd BufNewFile,BufRead * inoremap { {}<esc>i
 autocmd BufNewFile,BufRead *.java inoremap { {<esc>o}<esc>O
 autocmd BufNewFile,BufRead *.cpp inoremap { {<esc>o}<esc>O
 autocmd BufNewFile,BufRead *.c inoremap { {<esc>o}<esc>O
@@ -228,3 +225,6 @@ autocmd FileType * map <leader>d :w<cr>:Dispatch<cr>
 " D dispatch stuffs
 autocmd FileType d map <leader>B :w<cr>:Start dub run<cr>
 autocmd FileType d map <leader>d :w<cr>:Dispatch dub build<cr>
+
+" clang-format
+map <leader>C :%!clang-format<cr>
