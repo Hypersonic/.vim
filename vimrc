@@ -226,5 +226,13 @@ autocmd FileType * map <leader>d :w<cr>:Dispatch<cr>
 autocmd FileType d map <leader>B :w<cr>:Start dub run<cr>
 autocmd FileType d map <leader>d :w<cr>:Dispatch dub build<cr>
 
-" clang-format
-map <leader>C :%!clang-format<cr>
+" ALE
+" no linters, just formatters:
+autocmd BufNewFile,BufRead * let b:ale_linters = []
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+\    'cpp': ['clang-format'],
+\    'python': ['black'],
+\}
+" disable fixing on BUCK target files:
+autocmd BufNewFile,BufRead BUCK let b:ale_fixers = []

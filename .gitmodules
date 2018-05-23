@@ -28,3 +28,6 @@
 [submodule "bundle/vim-rtags"]
 	path = bundle/vim-rtags
 	url = https://github.com/lyuts/vim-rtags
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
