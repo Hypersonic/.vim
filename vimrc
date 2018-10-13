@@ -231,8 +231,13 @@ autocmd FileType d map <leader>d :w<cr>:Dispatch dub build<cr>
 autocmd BufNewFile,BufRead * let b:ale_linters = []
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
+\    'c': ['clang-format'],
 \    'cpp': ['clang-format'],
 \    'python': ['black'],
+\    'go': ['gofmt'],
 \}
 " disable fixing on BUCK target files:
 autocmd BufNewFile,BufRead BUCK let b:ale_fixers = []
+
+" vim-markdown
+let g:vim_markdown_fenced_languages = ['js=javascript', 'c++=cpp']
