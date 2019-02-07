@@ -71,6 +71,9 @@ nmap <leader>PP :set paste!<cr>
 set splitbelow
 set splitright
 
+" mouse clicking because i'm a coward
+set mouse=a
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -103,6 +106,8 @@ set nolazyredraw "Don't redraw while executing macros
 set magic "Set magic on, for regular expressions
 
 set showmatch "Show matching bracets when text indicator is over them
+set matchpairs+=<:>  "Highlight <> pairs, such as in C++ templates
+
 set mat=2 "How many tenths of a second to blink
 
 " No sound on errors
@@ -235,6 +240,7 @@ let g:ale_fixers = {
 \    'cpp': ['clang-format'],
 \    'python': ['black'],
 \    'go': ['gofmt'],
+\    'rust': ['rustfmt'],
 \}
 " disable fixing on BUCK target files:
 autocmd BufNewFile,BufRead BUCK let b:ale_fixers = []
