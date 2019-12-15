@@ -223,7 +223,7 @@ inoremap "" ""<esc>i
 
 " FuzzyFinder
 map <leader>b :FufBuffer<cr>
-map <leader>f :FufFile<cr>
+map <leader>f :FufCoverageFile<cr>
 
 autocmd FileType * map <leader>d :w<cr>:Dispatch<cr>
 
@@ -241,9 +241,8 @@ let g:ale_fixers = {
 \    'python': ['black'],
 \    'go': ['gofmt'],
 \    'rust': ['rustfmt'],
+\    'javascript': ['prettier'],
 \}
-" disable fixing on BUCK target files:
-autocmd BufNewFile,BufRead BUCK let b:ale_fixers = []
 
 " vim-markdown
 let g:vim_markdown_fenced_languages = ['js=javascript', 'c++=cpp']
