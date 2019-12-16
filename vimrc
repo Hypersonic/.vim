@@ -1,7 +1,3 @@
-""""""""""""""""""""""
-" Josh's minimal vimrc
-""""""""""""""""""""""
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Initialization
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -144,42 +140,6 @@ set si "Smart indent
 " set tw=72 " Automatically newline at this many characters on a line
 set fo=crqt " Continue comments on to the next line if you newline in a comment
 
-
-
-""""""""""""""""""""""""""""""
-" => Visual mode related
-""""""""""""""""""""""""""""""
-
-vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
-
-function! CmdLine(str)
-    exe "menu Foo.Bar :" . a:str
-    emenu Foo.Bar
-    unmenu Foo
-endfunction 
-
-function! VisualSelection(direction) range
-    let l:saved_reg = @"
-    execute "normal! vgvy"
-
-    let l:pattern = escape(@", '\\/.*$^~[]')
-    let l:pattern = substitute(l:pattern, "\n$", "", "")
-
-    if a:direction == 'b'
-        execute "normal ?" . l:pattern . "^M"
-    elseif a:direction == 'gv'
-        call CmdLine("vimgrep " . '/'. l:pattern . '/' . ' **/*.')
-    elseif a:direction == 'replace'
-        call CmdLine("%s" . '/'. l:pattern . '/')
-    elseif a:direction == 'f'
-        execute "normal /" . l:pattern . "^M"
-    endif
-
-    let @/ = l:pattern
-    let @" = l:saved_reg
-endfunction
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -211,7 +171,6 @@ autocmd BufNewFile,BufRead * inoremap { {}<esc>i
 autocmd BufNewFile,BufRead *.java inoremap { {<esc>o}<esc>O
 autocmd BufNewFile,BufRead *.cpp inoremap { {<esc>o}<esc>O
 autocmd BufNewFile,BufRead *.c inoremap { {<esc>o}<esc>O
-autocmd BufNewFile,BufRead *.js inoremap { {<esc>o}<esc>O
 autocmd BufNewFile,BufRead *.css inoremap { {<esc>o}<esc>O
 " inoremap ' ''<esc>i
 inoremap "" ""<esc>i
@@ -224,12 +183,6 @@ inoremap "" ""<esc>i
 " FuzzyFinder
 map <leader>b :FufBuffer<cr>
 map <leader>f :FufCoverageFile<cr>
-
-autocmd FileType * map <leader>d :w<cr>:Dispatch<cr>
-
-" D dispatch stuffs
-autocmd FileType d map <leader>B :w<cr>:Start dub run<cr>
-autocmd FileType d map <leader>d :w<cr>:Dispatch dub build<cr>
 
 " ALE
 " no linters, just formatters:
